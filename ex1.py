@@ -172,7 +172,7 @@ class Algorithms:
 
 
 if __name__ == '__main__':
-    algo_num, board_size, initial_state_list = parsefile('files/input.txt')
+    algo_num, board_size, initial_state_list = parsefile('input.txt')
     length = board_size ** 2
     goal_state = [n % length for n in range(1, length + 1)]
     initial_node = Node(None, TilePuzzleState(initial_state_list, None))
